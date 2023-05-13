@@ -20,7 +20,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 ---
 Hello,
 
-I am a Postdoctoral Researcher in the Cognitive Robotics Department (CoR), Delft University of Technology (Netherlands) with Prof. Jens Kober and External Lecturer at the University of Applied Sciences Technikum-Wien (Austria). 
+I am a Postdoctoral Researcher in the Cognitive Robotics Department (CoR), Delft University of Technology (Netherlands) with Prof. Jens Kober. 
 
 Previously, I received a master's degree from the Univesity of Sarajevo (Bosnia and Herzegovina) and a PhD degree from the Graz University of Technology (Austria), all focused on Automation and Control. Previously, as a Marie Skłodowska-Curie Fellow, I was a senior researcher at VIRTUAL VEHICLE Research GmbH, Graz (Austria), a visiting researcher at TU Delft, University of Sarajevo, AVL List and Volvo Cars.
 
