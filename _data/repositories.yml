@@ -1,12 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - zlatanajanovic
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - zlatanajanovic/SBMP_PerfDriving
+  - zlatanajanovic/ML_behavioral_cloning_selfdriving_car
+  - zlatanajanovic/partnr-learn.github.io
+  - zlatanajanovic/mpc_to_line
