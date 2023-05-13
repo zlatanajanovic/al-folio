@@ -269,7 +269,7 @@ display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will
 
 scholar:
 
-  last_name: [Ajanovic]
+  last_name: [Ajanovic, Ajanovi\'c]
   first_name: [Zlatan, Z.]
 
   style: apa

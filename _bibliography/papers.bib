@@ -56,7 +56,7 @@
   title = {A Novel Model-Based Heuristic for Energy-Optimal Motion Planning for Automated Driving},
   author = {Ajanovi\'c, Zlatan and Stolz, Michael and Horn, Martin},
   year = {2018},
-  journaltitle = {IFAC-PapersOnLine},
+  journal = {IFAC-PapersOnLine},
   volume = {51},
   number = {9},
   pages = {255--260},
@@ -168,6 +168,7 @@
   publisher = {{Federalno ministarstvo obrazovanja i nauke/znanosti : Fondacija za inovacijski i tehnolo\v{s}ki razvoj}},
   doi = {10.48550/arXiv.2209.03990},
   urldate = {2022-11-29},
+  preview={ai_vision.png},
   abstract = {Artificial Intelligence (AI) is one of the most promising technologies of the 21. century, with an already noticeable impact on society and the economy. With this work, we provide a short overview of global trends, applications in industry and selected use-cases from our international experience and work in industry and academia. The goal is to present global and regional positive practices and provide an informed opinion on the realistic goals and opportunities for positioning B\&H on the global AI scene.},
   keywords = {Computer Science - Artificial Intelligence},
   file = {/home/z/snap/zotero-snap/common/Zotero/storage/V5F585WA/AI_zbornik-radova_WEB.pdf;/home/z/snap/zotero-snap/common/Zotero/storage/WIPWE5AY/Ajanović et al_2022_Vision for Bosnia and Herzegovina in Artificial Intelligence Age.pdf;/home/z/snap/zotero-snap/common/Zotero/storage/VR3YV5NT/2209.html}
@@ -179,7 +180,7 @@
   shorttitle = {Search-Based Task and Motion Planning for Hybrid Systems},
   author = {Ajanovi\'c, Zlatan and Regolin, Enrico and Shyrokau, Barys and \'Cati\'c, Hana and Horn, Martin and Ferrara, Antonella},
   year = {2023},
-  journaltitle = {Engineering Applications of Artificial Intelligence},
+  journal = {Engineering Applications of Artificial Intelligence},
   shortjournal = {Engineering Applications of Artificial Intelligence},
   volume = {121},
   pages = {105893},
@@ -188,6 +189,7 @@
   urldate = {2023-02-11},
   abstract = {To achieve optimal robot behavior in dynamic scenarios we need to consider complex dynamics in a predictive manner. In the vehicle dynamics community, it is well know that to achieve time-optimal driving on low friction surface, the vehicle should utilize drifting. Hence, many authors have devised rules to split circuits and employ drifting on some segments. These rules are suboptimal and do not generalize to arbitrary circuit shapes (e.g., S-like curves). So, the question ``When to go into which mode and how to drive in it?'' remains unanswered. To choose the suitable mode (discrete decision), the algorithm needs information about the feasibility of different modes (continuous motion). This makes it a class of Task and Motion Planning (TAMP) problems, which are known to be hard to solve optimally in real-time. In the AI planning community, search methods are commonly used. However, they cannot be directly applied to TAMP problems due to the continuous component. Here, we present a search-based method that effectively solves this problem and efficiently searches in a highly dimensional state space with nonlinear and unstable dynamics. The space of the possible trajectories is explored by sampling different combinations of motion primitives guided by the search. Our approach allows to use multiple locally approximated models to generate motion primitives (e.g., learned models of drifting) and effectively simplify the problem without losing accuracy. The algorithm performance is evaluated in simulated driving on a mixed-track with segments of different curvatures (right and left). Our code is available at https://git.io/JenvB.},
   langid = {english},
+  preview={drift.gif},
   keywords = {Autonomous vehicles,Behavior planning,Hybrid systems,Motion planning,Search,Task and motion planning},
   file = {/home/z/snap/zotero-snap/common/Zotero/storage/KZ48K3QX/Ajanović et al_2023_Search-based task and motion planning for hybrid systems.pdf;/home/z/snap/zotero-snap/common/Zotero/storage/GUSXAD2A/S0952197623000775.html}
 }
@@ -195,13 +197,43 @@
 @article{celemin2022interactive,
   bibtex_show={true},
   title = {Interactive Imitation Learning in Robotics: {{A}} Survey},
-  author = {Celemin, Carlos and P\'erez-Dattari, Rodrigo and Chisari, Eugenio and Franzese, Giovanni and family=Souza Rosa, given=Leandro, prefix=de, useprefix=true and Prakash, Ravi and Ajanovi\'c, Zlatan and Ferraz, Marta and Valada, Abhinav and Kober, Jens},
+  author = {Celemin, Carlos and P\'erez-Dattari, Rodrigo and Chisari, Eugenio and Franzese, Giovanni and de Souza Rosa, Leandro and Prakash, Ravi and Ajanovi\'c, Zlatan and Ferraz, Marta and Valada, Abhinav and Kober, Jens},
   year = {2022},
-  journaltitle = {Foundations and Trends\textregistered{} in Robotics},
+  journal = {Foundations and Trends in Robotics},
   volume = {10},
   number = {1-2},
   pages = {1--197},
   issn = {1935-8253},
-  doi = {10.1561/2300000072}
+  doi = {10.1561/2300000072},
+  preview={IIL_survey.png},
 }
 
+@inproceedings{luijkx2022partnr,
+  title = {{{PARTNR}}: {{Pick}} and Place {{Ambiguity Resolving}} by {{Trustworthy iNteractive leaRning}}},
+  shorttitle = {{{PARTNR}}},
+  booktitle = {{{NeurIPS}} 2022 {{Workshop}} on {{Robot Learning}}},
+  author = {Luijkx, Jelle and Ajanovic, Zlatan and Ferranti, Laura and Kober, Jens},
+  date = {2022-11-15},
+  eprint = {2211.08304},
+  eprinttype = {arxiv},
+  eprintclass = {cs},
+  publisher = {{arXiv}},
+  doi = {10.48550/arXiv.2211.08304},
+  urldate = {2023-02-11},
+  preview={partnr.gif},
+  abstract = {Several recent works show impressive results in mapping language-based human commands and image scene observations to direct robot executable policies (e.g., pick and place poses). However, these approaches do not consider the uncertainty of the trained policy and simply always execute actions suggested by the current policy as the most probable ones. This makes them vulnerable to domain shift and inefficient in the number of required demonstrations. We extend previous works and present the PARTNR algorithm that can detect ambiguities in the trained policy by analyzing multiple modalities in the pick and place poses using topological analysis. PARTNR employs an adaptive, sensitivity-based, gating function that decides if additional user demonstrations are required. User demonstrations are aggregated to the dataset and used for subsequent training. In this way, the policy can adapt promptly to domain shift and it can minimize the number of required demonstrations for a well-trained policy. The adaptive threshold enables to achieve the user-acceptable level of ambiguity to execute the policy autonomously and in turn, increase the trustworthiness of our system. We demonstrate the performance of PARTNR in a table-top pick and place task.},
+  keywords = {{68T05, 68T07, 68T40, 68T45, 68T50},Computer Science - Artificial Intelligence,Computer Science - Computation and Language,Computer Science - Human-Computer Interaction,Computer Science - Machine Learning,Computer Science - Robotics,I.2.10,I.2.6,I.2.7,I.2.9},
+  file = {/home/z/snap/zotero-snap/common/Zotero/storage/G8TFWKIR/Luijkx et al_2022_PARTNR.pdf;/home/z/snap/zotero-snap/common/Zotero/storage/L7T6YXVQ/2211.html}
+
+}
+
+@inproceedings{drijver2023robotic,
+      title={Robotic Packaging Optimization with Reinforcement Learning}, 
+      author={Eveline Drijver and Rodrigo Pérez-Dattari and Jens Kober and Cosimo Della Santina and Zlatan Ajanović},
+      year={2023},
+      booktitle = {(submitted)},
+      eprint={2303.14693},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      preview={rl_packaging.gif},
+}
