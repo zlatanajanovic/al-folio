@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: zlatanajanovic.com/al-folio/sitemap.xml
+Sitemap: zlatanajanovic.com/sitemap.xml
