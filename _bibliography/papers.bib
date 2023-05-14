@@ -7,7 +7,7 @@
   booktitle = {30th International Conference on Automated Planning and Scheduling: {{Planning}} and Robotics Workshop},
   author = {Adabala, Bhargav and Ajanovic, Zlatan},
   year = {2020},
-  preview={parking.png},
+  preview={parking.png},abstract={Planning is a crucial component of autonomous vehicle control. It is responsible for finding a collision-free sequence of states that take the vehicle towards its goal. In unstructured environments like parking lots or construction sites, due to the large search-space and kinodynamic constraints of the vehicle, real-time planning is challenging. Several state-ofthe-art solutions utilize heuristic search-based planning algorithms. However, they heavily rely on the quality of the single heuristic function used to guide the search, and they are not capable to achieve reasonable performance, resulting in unnecessary delays in the response of the vehicle. This work solves the planning problem by adopting a Multi-Heuristic Search approach, that enables the use of multiple heuristic functions and their advantages to capture different complexities of a given search space. Based on our knowledge, this approach was not used for this domain so far. For this purpose, multiple admissible and non-admissible heuristic functions are defined, original Multi-Heuristic A* Search was extended for bidirectional use and dealing with hybrid continuous-discrete search space and a mechanism for adapting scale of motion primitives is introduced. To demonstrate the advantage, Multi-Heuristic A* algorithm is benchmarked against a very popular heuristic search-based algorithm, Hybrid A*. The Multi-Heuristic A* algorithm outperformed Hybrid A* in terms of computation efficiency and motion plan (path) quality.},
   file = {/home/z/snap/zotero-snap/common/Zotero/storage/XU7ZQ9HA/Adabala_Ajanovic_2020_A multi-heuristic search-based motion planning for autonomous parking.pdf}
 }
 
@@ -64,6 +64,9 @@
   number = {9},
   pages = {255--260},
   preview={eco_a_star.gif},
+  abstract={Predictive motion planning is the key to achieve energy-efficient driving, which is one of the main benefits of automated driving. Researchers have been studying the planning of velocity trajectories, a simpler form of motion planning, for over a decade now and many different methods are available. Dynamic programming has shown to be the most common choice due to its numerical background and ability to include nonlinear constraints and models. Although planning of an optimal trajectory is done in a systematic way, dynamic programming does not use any knowledge about the considered problem to guide the exploration and therefore explores all possible trajectories. 
+  
+  A* is a search algorithm which enables using knowledge about the problem to guide the exploration to the most promising solutions first. Knowledge has to be represented in a form of a heuristic function, which gives an optimistic estimate of cost for transitioning to the final state, which is not a straightforward task. This paper presents a novel heuristics incorporating air drag and auxiliary power as well as operational costs of the vehicle, besides kinetic and potential energy and rolling resistance known in the literature. Furthermore, optimal cruising velocity, which depends on vehicle aerodynamic properties and auxiliary power, is derived. Results are compared for different variants of heuristic functions and dynamic programming as well.},
   publisher = {{Elsevier}}
 }
 
@@ -117,14 +120,22 @@
   file = {/home/z/snap/zotero-snap/common/Zotero/storage/X54C4F47/Ajanovic et al_2019_A novel approach to model exploration for value function learning.pdf;/home/z/snap/zotero-snap/common/Zotero/storage/4QZF9486/1906.html}
 }
 
-@thesis{ajanovic2019towards,
+@phdthesis{ajanovic2019towards,
   bibtex_show={true},
-  title = {Towards {{SuperHuman}} Autonomous Vehicles},
-  author = {Ajanovic, Zlatan},
-  year = {2019},
-  preview={thesis.png},
-  booktitle = {{Graz University of Technology}},
-  file = {/home/z/snap/zotero-snap/common/Zotero/storage/AWRSWASN/Ajanovic_2019_Towards SuperHuman autonomous vehicles.pdf}
+  preview={thesis.png}, 
+  abbr={PhD},
+  title = "Towards SuperHuman Autonomous Vehicles",
+  abstract = "This thesis presents behavior and motion planning method that enables Autonomous Vehicles (AV) to achieve SuperHuman driving performance in terms of safety, efficiency and comfort. The developed method enables synergy of research in behavior and motion planning for Automated Driving, with research in eco-driving community, which target mainly complementary problem variations. Established approach in eco-driving is considering long planning horizons and multiple constraints (i.e. traffic lights, speed limits, etc.), but exclusively single lane driving. On the other hand, motion planning for Automated Driving considers multilane driving, but short planning horizons and decoupled (or hierarchical) solutions, focused on effectively reacting to the changing situations, and not on the long-term optimal behavior.As a result of the synergy, developed search-based optimal motion planning (SBOMP) solution enables optimal Automated Driving scalable to various challenging scenarios in urban, rural and highway environment. As a highlight, SBOMP enables, what is believed to be, the first demonstration of optimal multilane diving in dense traffic with traffic lights, while achieving SuperHuman driving performance. Even though, this scenario is pretty common in everyday driving, it was not tackled by any of these research communities before.The presented SBOMP framework is also extended to the third use-case, Performance Driving. By considering a more detailed vehicle model, SBOMP enables minimum lap-time driving on a slippery road, effectively entering and exiting drifting maneuvers and switching between right and left turns.The presented work is extensively tested in simulation, benchmarked with human driving behavior acquired in driving simulator study and in-vehicle testing on proving ground. The results show that in challenging urban driving scenario with traffic lights, AV outperforms even the best human drivers in terms of safety, efficiency and comfort. While human drivers violate traffic rules and even cause crashes, by using predictive planning, AV manages to drive smoothly through the traffic.Hopefully, this work contributes to the effort that Autonomous Vehicles become the first mass product of intelligent mobile robots in our society. ",
+  keywords = "Autonomous Vehicles, Motion Planning, eco-driving, Automated Driving, Performance Driving, SuperHuman Autonomous Vehicles",
+  author = "Zlatan Ajanovic",
+  year = "2019",
+  month = dec,
+  day = "6",
+  language = "English",
+  school = "Graz University of Technology",
+  pdf={ajanovic2019phdthesis.pdf},
+  html={https://graz.elsevierpure.com/en/publications/towards-superhuman-autonomous-vehicles},
+  url={https://graz.elsevierpure.com/en/publications/towards-superhuman-autonomous-vehicles},
 }
 
 @inproceedings{ajanovic2020search,
@@ -216,9 +227,21 @@
   issn = {1935-8253},
   doi = {10.1561/2300000072},
   preview={IIL_survey.png},
+  abstract={Interactive Imitation Learning (IIL) is a branch of Imitation Learning (IL) where human feedback is provided intermittently during robot execution allowing an online improvement of the robot’s behavior.
+
+  In recent years, IIL has increasingly started to carve out its own space as a promising data-driven alternative for solving complex robotic tasks. The advantages of IIL are twofold, 1) it is data-efficient, as the human feedback guides the robot directly towards an improved behavior (in contrast with Reinforcement Learning (RL), where behaviors must be discovered by trial and error), and 2) it is robust, as the distribution mismatch between the teacher and learner trajectories is minimized by providing feedback directly over the learner’s trajectories (as opposed to offline IL methods such as Behavioral Cloning).
+
+  Nevertheless, despite the opportunities that IIL presents, its terminology, structure, and applicability are not clear nor unified in the literature, slowing down its development and, therefore, the research of innovative formulations and discoveries.
+
+  In this work, we attempt to facilitate research in IIL and lower entry barriers for new practitioners by providing a survey of the field that unifies and structures it. In addition, we aim to raise awareness of its potential, what has been accomplished and what are still open research questions.
+
+  We organize the most relevant works in IIL in terms of human-robot interaction (i.e., types of feedback), interfaces (i.e., means of providing feedback), learning (i.e., models learned from feedback and function approximators), user experience (i.e., human perception about the learning process), applications, and benchmarks. Furthermore, we analyze similarities and differences between IIL and RL, providing a discussion on how the concepts offline, online, off-policy and on-policy learning should be transferred to IIL from the RL literature.
+
+  We particularly focus on robotic applications in the real world and discuss their implications, limitations, and promising future areas of research.}
 }
 
 @inproceedings{luijkx2022partnr,
+  bibtex_show={true},
   title = {{{PARTNR}}: {{Pick}} and Place {{Ambiguity Resolving}} by {{Trustworthy iNteractive leaRning}}},
   shorttitle = {{{PARTNR}}},
   booktitle = {{{NeurIPS}} 2022 {{Workshop}} on {{Robot Learning}}},
@@ -238,12 +261,14 @@
 }
 
 @inproceedings{drijver2023robotic,
-      title={Robotic Packaging Optimization with Reinforcement Learning}, 
-      author={Eveline Drijver and Rodrigo Pérez-Dattari and Jens Kober and Cosimo Della Santina and Zlatan Ajanović},
-      year={2023},
-      booktitle = {(submitted)},
-      eprint={2303.14693},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      preview={rl_packaging.gif},
+  bibtex_show={true},
+  title={Robotic Packaging Optimization with Reinforcement Learning}, 
+  author={Eveline Drijver and Rodrigo Pérez-Dattari and Jens Kober and Cosimo Della Santina and Zlatan Ajanović},
+  year={2023},
+  booktitle = {(submitted)},
+  eprint={2303.14693},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO},
+  preview={rl_packaging.gif},
+  abstract={Intelligent manufacturing is becoming increasingly important due to the growing demand for maximizing productivity and flexibility while minimizing waste and lead times. This work investigates automated secondary robotic food packaging solutions that transfer food products from the conveyor belt into containers. A major problem in these solutions is varying product supply which can cause drastic productivity drops. Conventional rule-based approaches, used to address this issue, are often inadequate, leading to violation of the industry's requirements. Reinforcement learning, on the other hand, has the potential of solving this problem by learning responsive and predictive policy, based on experience. However, it is challenging to utilize it in highly complex control schemes. In this paper, we propose a reinforcement learning framework, designed to optimize the conveyor belt speed while minimizing interference with the rest of the control system. When tested on real-world data, the framework exceeds the performance requirements (99.8\% packed products) and maintains quality (100\% filled boxes). Compared to the existing solution, our proposed framework improves productivity, has smoother control, and reduces computation time.}
 }
