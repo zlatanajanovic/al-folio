@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am serving as an Associate Editor for IEEE/RSJ IROS 2023.
+Serving as an Associate Editor for IEEE/RSJ IROS 2023.
