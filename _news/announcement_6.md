@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Attending <a href="https://life-long-learning-with-human-help-l3h2.github.io/">ICRA</a>. If you are around and want to meet, drop me a message.
+Attending ICRA. We are organizing the <a href="https://life-long-learning-with-human-help-l3h2.github.io/">Life-Long Learning with Human Help (L3H2) workshop</a>.
